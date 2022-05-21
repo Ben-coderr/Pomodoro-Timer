@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Pomodoro Timer</title>
+</head>
+<body>
+    <img src="images/" alt="">
+    <div id="container">
+        <p id="work" class="label">Work:</p><p id="cycles" class="label">Cycles:</p><p id="break" class="label">Break:</p>
+        <!--Work Timer-->
+        <div id="work-timer" class="timer">
+            <input type="number" id="w_minutes" max="60" value="50" ><p class="semicolon">:</p><p id="w_seconds">00</p>
+        </div>
+
+        <!--Cycle Counter-->
+        <p id="counter" class="timer">0</p>
+
+        <!--Break Timer-->
+        <div id="break-timer" class="timer">
+            <p id="b_minutes">05</p><p class="semicolon">:</p><p id="b_seconds">00</p>
+        </div>
+        <button id="start" class="btn">Start</button>
+        <button id="stop" class="btn">Pause</button>
+        <button id="reset" class="btn">Reset</button>
+    </div>
+    <div class="background">
+        <div class="background_changer">
+            <button class="image_btn"><img src="images/image (1).png" class="image"></button>
+            <div class="imgs none" >
+                <img src="images/203518.jpg" class="images active">
+                <img src="images/99825.jpg" class="images">
+                <img src="images/203530.jpg" class="images">
+                <img src="images/203536.png" class="images">
+            </div>
+        </div>
+        <div class="background_changer_wthLink none">
+            <input type="text" class="back_link" placeholder="Enter background url">
+            <button class="btn back_chng"></button>
+        </div>
+    </div>
+    <div class="copyRights">
+        <a href="https://www.instagram.com/ben.coderr/" target="_blank">@Ben.coderr</a>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+    <script src="main.js"></script>
+    
+</body>
+</html>
